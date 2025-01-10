@@ -1,4 +1,22 @@
-# Ontap
+# Data Type Migration
+- $table->bigIncrements('id');
+- $table->bigInteger('votes');
+- $table->boolean('confirmed');
+- $table->char('name', 100);
+- $table->dateTime('created_at', $precision = 0);
+- $table->date('created_at');
+- $table->decimal('amount', $precision = 8, $scale = 2);
+- $table->double('amount', 8, 2);
+- $table->enum('difficulty', ['easy', 'hard']);
+- $table->id();
+- $table->integer('votes');
+- $table->longText('description');
+- $table->string('name', 100);
+- $table->time('sunrise', $precision = 0);
+- $table->timestamp('added_at', $precision = 0);
+- $table->year('birth_year');
+
+# Faker
 ## Number
 - randomDigit             // 7
 - randomDigitNot(5)       // 0, 1, 2, 3, 4, 6, 7, 8, or 9
