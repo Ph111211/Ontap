@@ -1,9 +1,9 @@
 # Ontap
-baiOntapCNweb
-randomDigit             // 7
-randomDigitNot(5)       // 0, 1, 2, 3, 4, 6, 7, 8, or 9
-randomDigitNotNull      // 5
-randomNumber($nbDigits = NULL, $strict = false) // 79907610
+## Number
+- randomDigit             // 7
+- randomDigitNot(5)       // 0, 1, 2, 3, 4, 6, 7, 8, or 9
+- randomDigitNotNull      // 5
+- randomNumber($nbDigits = NULL, $strict = false) // 79907610
 randomFloat($nbMaxDecimals = NULL, $min = 0, $max = NULL) // 48.8932
 numberBetween($min = 1000, $max = 9000) // 8567
 randomLetter            // 'b'
