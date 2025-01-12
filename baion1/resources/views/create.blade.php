@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initialscale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
-<script src="bootstrap-5.0.2-dist/css/bootstrap.bundle.min.js"></script>
+<link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+<script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
 <title>Posts</title>
 </head>
 <body>

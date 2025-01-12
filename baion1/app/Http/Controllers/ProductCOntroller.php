@@ -13,6 +13,7 @@ class ProductCOntroller extends Controller
     public function index()
     {   
         $products = Product::with('Store')->paginate(5);
+        // 'store_id','name','description','price',store_'name','address','phone'
         return view('index' ,compact('products'));
     }
 
@@ -30,12 +31,12 @@ class ProductCOntroller extends Controller
      */
     public function store(Request $request)
     {
-        $stores_id= Store::pluck('id')->toArray();
+        
         $request->validate([
             'name' => 'required|string|max:255', 
             'description' => 'nullable|string', 
             'price' => 'required|numeric|min:0.0',
-            'store_id'=>'required|exists:stores,id'
+            'store_id'=>'required|exists:stores,id'//store_id phai ton taij trong cot id cua bang stores
             
         ]);
 
